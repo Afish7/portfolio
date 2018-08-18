@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Adam's portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-spy="scroll" data-target="#myScrollspy">
+    <nav class="navbar navbar-default navbar-fixed-top" data-spy="affix" data-offset-top="205">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand" href="#">Adam Fisher</a> </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="main-head" itemscope>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1 itemprop="name">Adam Fisher</h1>
+                <p itemprop="jobTitle">Skilled Web Master</p>
+            </div>
+        </div>
+    </header>
+    <section class="about-section bg-color" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+                    <h3>About</h3>
+                    <p> is an aspiring digital marketing wizard, who is skilled in HTML, CSS, JS, SEO, and Google Analytics.
+Adam has worked on over 20 websites with big brands such as Disney and helps smaller businesses make a name for themselves on the internet. Adam assists with website redesigns, google page rankings, and branding.</p>
+<p>In his freetime Adam loves to play golf, hike, game, and learn more about his craft.</p>
+                    <a href="mailto:eightyfisher@gmail.com" class="btn btn-default-new">Email Adam</a> </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="service-section" id="skills">
+        <div class="container">
+             <h3>Skills</h3>
+
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="service-items">
+                        <div class="icon">
+                            <span class="glyphicon glyphicon-user"></span>
+                        </div>
+                        <h4><a href="#">Analytical Mindset</a></h4>
+                        <p>Collecting data and filtering through to find any outliers.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="service-items">
+                        <div class="icon">
+                            <span class="glyphicon glyphicon-console"></span>
+                        </div>
+                        <h4><a href="#">A Solid Background in HTML</a></h4>
+                        <p>Understands the tags and markup that comprise web pages.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="service-items">
+                        <div class="icon">
+                            <span class="glyphicon glyphicon-signal"></span>
+                        </div>
+                        <h4><a href="#">Google Analytics Certified</a></h4>
+                        <p>Make decisions based on data. </p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="service-items">
+                        <div class="icon">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </div>
+                        <h4><a href="#">Schema.org</a></h4>
+                        <p>Implementing microdata so google knows where to look for content.</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <section itemscope itemtype="http://schema.org/EducationalOrganization" class="about-section bg-color" id="education">
+        <div class="container">
+            <div class="row">
+              <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+                <h3>Education</h3>
+        <ul class="list-group">
+            <li itemprop="name" class="list-group-item">UCLA Extension: Advanced Web and Interaction Design Certificate<p class="education_blurb">Learned about UX, HTML, CSS, JS, Photoshop, SEO.</p></li>
+            <li itemprop="name" class="list-group-item">General Assembly: Web Development Immersive<p class="education_blurb">Coding Bootcamp focused on Front-end Web Development</p></li>
+            <li itemprop="name" class="list-group-item">Google Analytics Academy Certificate<p class="education_blurb">Completed all Analytics Academy Courses</p></li>
+            <li itemprop="name" class="list-group-item">Calabasas High School Diploma<p class="education_blurb">General Education</p></li>
+            <li itemprop="name" class="list-group-item">Self-taught Codeacademy and Lynda.com courses<p class="education_blurb">Learned about Adwords, SEO, Internet Marketing, and more</p></li>
+        </ul>
+              </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="service-section" id="demo">
+        <div class="container">
+            <div class="row">
+              <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+                <h3>Demonstration</h3>
+        <ul class="list-group">
+            <li class="list-group-item" class=".pre-scrollable">AJAX DEMO
+              <pre><code>&lt;script&gt;
+$(document).ready(function(){
+    $("button").click(function(){
+        $.ajax({url: "demo_test.txt", success: function(result){
+            $("#div1").html(result);
+        }});
+    });
+});
+&lt;/script&gt;
+
+&lt;body&gt;
+&lt;div id="div1"&gt;&lt;h2&gt;Let jQuery AJAX Change This Text&lt;/h2&gt;&lt;/div&gt;
+
+&lt;button&gt;&lt;/p&gt;Get External Content&lt;/button&gt;&lt;/p&gt;
+&lt;/body&gt;
+                </code></pre>
+
+              </li>
+          <!---  <li class="list-group-item">demo#1
+              <pre><code>&lt;p&gt;Sample text here...&lt;/p&gt;
+                  &lt;p&gt;And another line of sample text here...&lt;/p&gt;
+                </code></pre></li> --->
+<li class="list-group-item">Schema.org movie markup
+<code><pre>
+    &lt;div itemscope itemtype="http://schema.org/Movie"&gt;
+     &lt;h1 itemprop="name"&gt;The Town (2010)&lt;/h1&gt;
+         &lt;div>&lt;img src="img/town.jpg">&lt;/div&gt;
+        &lt;span itemprop="description"&gt;Description goes here&lt;/span&gt;
+
+         &lt;div itemprop="director" itemscope itemtype="http://schema.org/Person"&gt;
+           Director:
+        &lt;span itemprop="name"&gt;Peter Craig (screenplay)&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div itemprop="author" itemscope itemtype="http://schema.org/Person"&gt;
+          Writers:
+        &lt;span itemprop="name"&gt;Peter Craig (screenplay), Ben Affleck (screenplay)&lt;/span&gt;, and 2 more credits
+        &lt;/div&gt;
+         &lt;div itemprop="actor" itemscope itemtype="http://schema.org/Person"&gt;
+           Stars:
+        &lt;span itemprop="name"&gt; Ben Affleck, Rebecca Hall, Jon Hamm&lt;/span&gt;,
+         &lt;/div&gt;
+        &lt;div itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating"&gt;
+          &lt;span itemprop="ratingValue"&gt;7.6&lt;/span>/&lt;span itemprop="bestRating"&gt;10&lt;/span&gt; stars from
+          Reviews: &lt;span itemprop="reviewCount"&gt; 310,395 &lt;/span&gt;.
+        &lt;/div&gt;
+
+&lt;/div&gt;
+</pre> </code>
+
+              <div itemscope itemtype="http://schema.org/Movie">
+                <h1 itemprop="name">The Town (2010)</h1>
+                 <div><img src="img/town.jpg"></div>
+                <span itemprop="description">As he plans his next job, a longtime thief tries to balance his feelings for a bank manager connected to one of his earlier heists, as well as the F.B.I. Agent looking to bring him and his crew down.</span>
+
+                 <div itemprop="director" itemscope itemtype="http://schema.org/Person">
+                   Director:
+                <span itemprop="name">Peter Craig (screenplay)</span>
+                </div>
+                <div itemprop="author" itemscope itemtype="http://schema.org/Person">
+                  Writers:
+                <span itemprop="name">Peter Craig (screenplay), Ben Affleck (screenplay)</span>, and 2 more credits
+                </div>
+                 <div itemprop="actor" itemscope itemtype="http://schema.org/Person">
+                   Stars:
+                <span itemprop="name"> Ben Affleck, Rebecca Hall, Jon Hamm</span>,
+                 </div>
+                <div itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+                  <span itemprop="ratingValue">7.6</span>/<span itemprop="bestRating">10</span> stars from
+                  Reviews: <span itemprop="reviewCount">310,395</span>.
+                </div>
+                </div>
+              </li>
+        </ul>
+              </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <footer itemscope id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+                    <h3>Let's Get In Touch!</h3>
+                    <p>Ready to start your next project with me? Reach out today!</p>
+                    <div class="gap">
+                    <div class="col-sm-6 col-xs-12">
+                        <span class="glyphicon glyphicon-earphone"></span>
+                        <a itemprop="telephone" href="tel:123456789">123-456-789</a>
+                    </div>
+                     <div class="col-sm-6 col-xs-12">
+                        <span class="glyphicon glyphicon-envelope"></span>
+                        <a itemprop="email" href="mailto:afish7@gmail.com">Afish7@gmail.com</a>
+                    </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+</body>
+
+</html>
