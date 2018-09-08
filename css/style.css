@@ -258,6 +258,12 @@ section{
 /**** ABOUT END ****/
 /**** Skills ****/
 
+body {
+  background-color: limegreen;
+}
+
+
+
 section#demo pre {
     text-align: left;
 }
