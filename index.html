@@ -144,6 +144,29 @@ $(document).ready(function(){
                   &lt;p&gt;And another line of sample text here...&lt;/p&gt;
                 </code></pre></li> --->
 <li class="list-group-item">Schema.org movie markup
+
+  <div itemscope itemtype="http://schema.org/Movie">
+    <h1 itemprop="name">The Town (2010)</h1>
+     <div><img src="img/town.jpg"></div>
+    <span itemprop="description">As he plans his next job, a longtime thief tries to balance his feelings for a bank manager connected to one of his earlier heists, as well as the F.B.I. Agent looking to bring him and his crew down.</span>
+
+     <div itemprop="director" itemscope itemtype="http://schema.org/Person">
+       Director:
+    <span itemprop="name">Peter Craig (screenplay)</span>
+    </div>
+    <div itemprop="author" itemscope itemtype="http://schema.org/Person">
+      Writers:
+    <span itemprop="name">Peter Craig (screenplay), Ben Affleck (screenplay)</span>, and 2 more credits
+    </div>
+     <div itemprop="actor" itemscope itemtype="http://schema.org/Person">
+       Stars:
+    <span itemprop="name"> Ben Affleck, Rebecca Hall, Jon Hamm</span>,
+     </div>
+    <div itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+      <span itemprop="ratingValue">7.6</span>/<span itemprop="bestRating">10</span> stars from
+      Reviews: <span itemprop="reviewCount">310,395</span>.
+    </div>
+    </div>
 <code><pre>
     &lt;div itemscope itemtype="http://schema.org/Movie"&gt;
      &lt;h1 itemprop="name"&gt;The Town (2010)&lt;/h1&gt;
@@ -170,28 +193,7 @@ $(document).ready(function(){
 &lt;/div&gt;
 </pre> </code>
 
-              <div itemscope itemtype="http://schema.org/Movie">
-                <h1 itemprop="name">The Town (2010)</h1>
-                 <div><img src="img/town.jpg"></div>
-                <span itemprop="description">As he plans his next job, a longtime thief tries to balance his feelings for a bank manager connected to one of his earlier heists, as well as the F.B.I. Agent looking to bring him and his crew down.</span>
 
-                 <div itemprop="director" itemscope itemtype="http://schema.org/Person">
-                   Director:
-                <span itemprop="name">Peter Craig (screenplay)</span>
-                </div>
-                <div itemprop="author" itemscope itemtype="http://schema.org/Person">
-                  Writers:
-                <span itemprop="name">Peter Craig (screenplay), Ben Affleck (screenplay)</span>, and 2 more credits
-                </div>
-                 <div itemprop="actor" itemscope itemtype="http://schema.org/Person">
-                   Stars:
-                <span itemprop="name"> Ben Affleck, Rebecca Hall, Jon Hamm</span>,
-                 </div>
-                <div itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
-                  <span itemprop="ratingValue">7.6</span>/<span itemprop="bestRating">10</span> stars from
-                  Reviews: <span itemprop="reviewCount">310,395</span>.
-                </div>
-                </div>
               </li>
         </ul>
               </div>
@@ -217,6 +219,9 @@ $(document).ready(function(){
                         <span class="glyphicon glyphicon-envelope"></span>
                         <a itemprop="email" href="mailto:afish7@gmail.com">Afish7@gmail.com</a>
                     </div>
+
+      
+
                     </div>
 
                 </div>

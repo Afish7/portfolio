@@ -258,6 +258,10 @@ section{
 /**** ABOUT END ****/
 /**** Skills ****/
 
+section#demo pre {
+    text-align: left;
+}
+
 .service-section h3{
     font-size: 36px;
     margin-bottom: 30px;
